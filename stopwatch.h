@@ -1,20 +1,20 @@
-#ifndef CLOCK_H
-#define CLOCK_H
+#ifndef STOPWATCH_H
+#define STOPWATCH_H
 
-#include <QFrame>
+#include <QWidget>
 #include <QElapsedTimer>
 
 namespace Ui {
-class Clock;
+class Stopwatch;
 }
 
-class Clock : public QFrame
+class Stopwatch : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit Clock(QWidget *parent = nullptr);
-    ~Clock();
+    explicit Stopwatch(QWidget *parent = nullptr);
+    ~Stopwatch();
 
     long centisecond, second, minute, hour;
 
@@ -26,17 +26,15 @@ public:
     bool isActive;
 
 private slots:
-    void on_pushButton_2_clicked();
+    void on_state_button_clicked();
     void on_update();
-
-
-    void on_pushButton_clicked();
+    void on_reset_button_clicked();
 
 private:
-    Ui::Clock *ui;
+    Ui::Stopwatch *ui;
     QElapsedTimer timer;
     QTimer* intervalTimer;
     long lastTime;
 };
 
-#endif // CLOCK_H
+#endif // STOPWATCH_H

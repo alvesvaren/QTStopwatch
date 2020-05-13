@@ -1,12 +1,11 @@
-#include "klock.h"
-#include "clock.h"
+#include "stopwatch.h"
 
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Clock w;
+    Stopwatch w;
     w.show();
     return a.exec();
 }

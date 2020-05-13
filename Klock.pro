@@ -16,17 +16,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    clock.cpp \
     main.cpp \
-    klock.cpp
+    stopwatch.cpp
 
 HEADERS += \
-    clock.h \
-    klock.h
+    stopwatch.h
 
 FORMS += \
-    clock.ui \
-    klock.ui
+    stopwatch.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
