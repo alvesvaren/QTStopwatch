@@ -9,6 +9,7 @@ Stopwatch::Stopwatch(QWidget *parent) :
     ui(new Ui::Stopwatch)
 {
     ui->setupUi(this);
+    this->isActive = false;
     this->second = 0, this->minute = 0, this->hour = 0, this->centisecond = 0, this->lastTime = 0;
 }
 
