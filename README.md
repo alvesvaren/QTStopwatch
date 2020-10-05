@@ -1,7 +1,7 @@
 # QTStopwatch
 A simple stopwatch made as a Qt 5 widget
 
-![Screenshot](https://i.imgur.com/OaeBSuU.png)
+![Screenshot](https://i.imgur.com/7igYhfX.png)
 
 ## Build/run:
 
