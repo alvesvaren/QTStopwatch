@@ -8,4 +8,6 @@ A simple stopwatch made as a Qt 5 widget
 - `mkdir build`
 - `cd build`
 - `qmake ..`
-- `./Stopwatch`
+- `sudo make install`
+- `sudo desktopfile-install Stopwatch.desktop`
+- Start it from your application list
